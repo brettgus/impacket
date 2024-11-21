@@ -1244,7 +1244,8 @@ class RemoteOperations:
         # Array of tuples of (local path to download, remote path of file)
         paths = [('%s/SAM' % localPath, '%s\\System32\\config\\SAM' % gmtSMBPath),
                  ('%s/SYSTEM' % localPath, '%s\\System32\\config\\SYSTEM' % gmtSMBPath),
-                 ('%s/SECURITY' % localPath, '%s\\System32\\config\\SECURITY' % gmtSMBPath)]
+                 ('%s/SECURITY' % localPath, '%s\\System32\\config\\SECURITY' % gmtSMBPath),
+                 ('%s/SOFTWARE' % localPath, '%s\\System32\\config\\SOFTWARE' % gmtSMBPath)]
 
         for p in paths:
             with open(p[0], 'wb') as local_file:
